@@ -32,10 +32,13 @@ int main()
     case 'a':
       puts("You selected arrow:");
       //call arrow function
+      print_arrow(5,8);
       break;
     case 'x':
       puts("You selected new_char:");
-      //call new_char function
+      for(char c = 'A'; c < 'D';c++)
+	print_char_8x12(c);
+      break;
     case 'q':
       puts("Bye!");
       goto done;/* terminate */
